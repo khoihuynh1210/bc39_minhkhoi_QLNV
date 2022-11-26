@@ -35,6 +35,16 @@ this.layChiTietNV = function(taiKhoan){
     }
 }
 
-this.capNhatNv = function(){};
+this.capNhatNv = function(nv){
+    var index = this.timViTriNV(nv.hoTen);
+    if (index !== - 1){
+        this.arr[index] = nv
+    }
+};
+
+
+
+
 this.timKiemNv = function(){};
 }
+
